@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repita comigo</title>
+</head>
+<body>
+  
+<script>
+  
+    // 1 - Escreva um algoritmo para ler 2 valores informados pelo usuário e se o segundo valor informado for ZERO, deve ser lido um novo valor, ou seja, para o segundo valor não pode ser aceito o valor zero nem negativo e imprimir o resultado da divisão do primeiro valor lido pelo segundo valor lido.
+
+    function inicio(){
+      valor1 = parseInt(prompt("Digite o primeiro valor: "));
+      valor2 = parseInt(prompt("Digite o segundo valor: "));
+      var divisao = valor1 / valor2
+      if(valor2 > 0){
+      alert("A divisão do valor 1 pelo valor 2 é : " + divisao)
+    }else{
+      alert("Os segundo valor nao pode ser 0 ou menor")
+      inicio();
+    }
+    }
+
+    inicio();
+ 
+
+</script>
+
+</body>
+
+</html>

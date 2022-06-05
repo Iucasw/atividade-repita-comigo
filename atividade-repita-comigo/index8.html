@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+
+      <script>
+//8 - Escreva um algoritmo para ler as notas da 1a. e 2a. avaliações de um aluno, calcule e imprima a média (simples) desse aluno. Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada nota.
+          function notas(){        
+            var nota1 = parseInt(prompt("Insira a sua primeira nota: "))
+            if(nota1 < 0 || nota1 > 10){
+            alert("Nota invalida! Insira uma nota valida")
+            
+            return notas()
+            }
+            var nota2 = parseInt(prompt("Insira a sua segunda nota: "))
+            if(nota2 < 0 || nota2 > 10){
+            alert("Nota invalida! Insira uma nota valida")
+             return notas()
+            } 
+            if (nota1 < 0 || nota1 > 10 && nota2 < 0 || nota2 > 10){
+
+              
+            }else{
+              var media = (nota1+nota2)/2
+          
+               var result = alert("Sua media foi: " + media)
+            }
+     
+           
+          
+        }
+        notas()
+    
+          
+
+      </script>
+</body>
+</html>

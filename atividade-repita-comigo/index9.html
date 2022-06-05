@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+    //9 - Ler um valor N e imprimir todos os valores inteiros entre 1 (inclusive) e N (inclusive). Considereque o N será sempre maior que ZERO.
+
+     
+    function numeros(){
+    
+    var inicial = 1
+     var numero = parseInt(prompt("Digite um valor"))
+     if(numero <= 0){
+       alert("O valor nao pode ser 0")
+       teste()
+      
+     }
+    
+    console.log(numero)
+     while(inicial <= numero){
+       document.write(inicial + " ")
+       inicial ++  
+     }
+    }
+    document.write("Os numeros entre 1 e o valor digitado são: ")
+    numeros()
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+    //6 - Escreva um programa para ler 2 notas de um aluno, calcular e imprimir a média final. Considere que a nota de aprovação é 9,5. Logo após escrever a mensagem "Calcular a média de outro aluno Sim/Não?" e solicitar um resposta. Se a resposta for "S", o programa deve ser executado novamente, caso contrário deve ser encerrado exibindo a quantidade de alunos aprovados.
+    var armazen = []
+      function notas(){
+        var nota1 = parseFloat(prompt("Digite a primeira nota: "))
+        var nota2 = parseFloat(prompt("Digite a segunda nota: "))
+        var media = (nota1+nota2)/2
+        var result = alert("A MEDIA FOI: " + media)
+        if(media >= 9.5){
+          armazen.push(media)
+          console.log(armazen)
+        }
+        var quest = prompt("calcular a média de outro aluno Sim/Não?")
+        if (quest == "Sim"){
+          notas()
+        }else{
+          alert(armazen.length + " Alunos foram aprovados")
+        }
+      }
+      notas()
+  </script>
+  
+</body>
+</html>
